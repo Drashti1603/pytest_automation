@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.8.10 on linux)" generated="2024-02-14T12:25:10.081921" rpa="false" schemaversion="5">
+<suite id="s1" name="Open" source="/home/drashti/Documents/Android_Automation/python/pytest/Open.robot">
+<test id="s1-t1" name="first test case" line="5">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-14T12:25:10.217233" level="INFO">registration form</msg>
+<arg>registration form</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-14T12:25:10.216912" elapsed="0.000423"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-14T12:25:10.217917" level="INFO">Opening browser 'Firefox' to base url 'https://www.way2automation.com/way2auto_jquery/index.php'.</msg>
+<arg>https://www.way2automation.com/way2auto_jquery/index.php</arg>
+<arg>Firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-14T12:25:10.217665" elapsed="7.223847"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-14T12:25:17.444583" level="INFO">Typing text 'Devarshi pandya' into text field 'name:name'.</msg>
+<arg>name:name</arg>
+<arg>Devarshi pandya</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-14T12:25:17.443265" elapsed="0.205166"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-14T12:25:17.649189" level="INFO">Typing text '9408518516' into text field 'name:phone'.</msg>
+<arg>name:phone</arg>
+<arg>9408518516</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-14T12:25:17.648817" elapsed="0.040316"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-14T12:25:17.691062" level="INFO">${random} = 9</msg>
+<var>${random}</var>
+<arg>random.randint(0,10)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-14T12:25:17.690045" elapsed="0.001140"/>
+</kw>
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-02-14T12:25:17.692446" level="INFO">${email} = 9de sas @gmail.com</msg>
+<var>${email}</var>
+<arg>${random}de sas @gmail.com</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2024-02-14T12:25:17.691838" elapsed="0.000694"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-14T12:25:17.693703" level="INFO">${email2} = 9de_sas_@gmail.com</msg>
+<var>${email2}</var>
+<arg>'${email}'.replace(' ','_')</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-14T12:25:17.693047" elapsed="0.000740"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-14T12:25:17.694838" level="INFO">Typing text '9de_sas_@gmail.com' into text field 'name:email'.</msg>
+<arg>name:email</arg>
+<arg>${email2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-14T12:25:17.694244" elapsed="0.076411"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-02-14T12:25:17.771413" level="INFO">Selecting options from selection list 'name:country' by label India.</msg>
+<arg>name:country</arg>
+<arg>India</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-02-14T12:25:17.771108" elapsed="0.035598"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-14T12:25:17.808268" level="INFO">Typing text 'Delhi' into text field 'name=city'.</msg>
+<arg>name=city</arg>
+<arg>Delhi</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-14T12:25:17.807285" elapsed="0.085332"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-14T12:25:17.894164" level="INFO">Typing text 'devarshi.pandya' into text field 'xpath:(//input[@name='username'])[2]'.</msg>
+<arg>xpath:(//input[@name='username'])[2]</arg>
+<arg>devarshi.pandya</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-14T12:25:17.893670" elapsed="0.056843"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-14T12:25:17.951575" level="INFO">Typing text 'Devarshi.pandya' into text field 'xpath:(//input[@name='password'])[2]'.</msg>
+<arg>xpath:(//input[@name='password'])[2]</arg>
+<arg>Devarshi.pandya</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-14T12:25:17.951105" elapsed="0.036724"/>
+</kw>
+<status status="PASS" start="2024-02-14T12:25:10.215843" elapsed="7.772618"/>
+</test>
+<status status="PASS" start="2024-02-14T12:25:10.083169" elapsed="7.906596"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Open">Open</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
